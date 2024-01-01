@@ -1,0 +1,412 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'opens sons', sans-serif;
+    /* color:#2c4964; */
+}
+.top1_Bar{
+    display:flex;
+    justify-content: space-between;
+    position: sticky;
+    height:2rem;
+    padding-left:4rem;
+    padding-right:4rem;
+    padding-top:10px;
+    padding-bottom:10px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+    
+}
+.topLeft{
+    display:flex;
+    color:#444444;
+   
+}
+.topLeft1{
+    margin-right:4px;
+    margin-left:1rem;
+    color:#1977cc; 
+}
+.topLeft2{
+    margin-left:1rem;
+    margin-right:4px;
+    color:#136fc0;
+}
+.topRight{
+   color:#0b385f;
+}
+.top2_Bar{
+    display:flex;
+    position: fixed;
+    color:#2c4964; 
+
+     top:0;  
+    /*sticky to the top */
+    padding-top:1rem;
+    padding-left:5rem;
+    padding-bottom:1rem;
+    width:100%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+    height:4.3rem;
+    background-color: white;
+    
+}
+.topBar{
+    display:flex;
+    position:fixed;
+    color:#2c4964; 
+    padding-left:30rem;
+}
+.topBar a{
+    margin-left:14px;
+    margin-right:14px;
+    margin-top:10px;
+    font-size:17px;
+    color:black;
+    text-decoration:none;
+    transition: text-decoration 0.3s;
+    color:#2c4964; 
+}
+.topBar a:hover {
+    color:#4ca0e5;
+    text-decoration: none;
+}
+/* .topBar a:after{
+    content:"";
+    position: absolute;
+    background-color: #136fc0;
+    width:0px;
+    height:3px;
+    bottom:10px;
+    transition:0.3s;
+    display: block;
+
+} */
+#dropDown {
+    border:none;
+    margin-top:5px;
+    margin-left:10px;
+    margin-right:10px;
+    font-size:14px;
+    cursor:pointer;
+}
+#dropDown:hover{
+    color:#4ca0e5;
+}
+.makeApp_Btn{
+    background-color:#3695e9;
+    border-radius: 1rem;
+    margin-top:8px;
+    padding-top:6px;
+    padding-bottom:7px;
+    padding-left:15px;
+    padding-right:15px;
+    color:white;
+    border:none;
+}
+.section1{
+    display:flex;
+    margin-top:7rem;
+    height:32rem;
+    /* height:80vh; */
+}
+.section1 img{
+    position:absolute;
+    top:0rem;
+    z-index:-1;
+    width: 100%;
+    height:40rem;
+    /* background-repeat: no-repeat; */
+}
+.section1 h1{
+    margin-left:5rem;
+    font-size:38px;
+    color:#2c4964; 
+
+    /* font-family: 'opens sons', sans-serif;
+    color:#2c4964; */
+   
+}
+.section1 h3{
+    margin-left:5rem;
+    line-height:4rem;
+    font-size:26px;
+    color:#2c4964; 
+
+}
+.section1 button{
+    font-size:15px;
+    margin-left:5rem;
+    margin-top:3rem;
+    background-color:#3695e9;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:25px;
+    padding-right:25px;
+    color:white;
+    border:none;
+    border-radius: 1rem;
+    position:relative;
+    top:-20px;
+}
+.Container{
+    display:flex;
+    Align-items:center;
+    justify-content: center;
+    position:relative;
+    margin-top:-12rem;
+}
+.Box1{
+    background-color: #1977cc;
+    color:white;
+    margin-left:5rem;
+    margin-right:2rem;
+    padding:1rem 2rem 2rem 2rem;
+    text-align: start;
+    max-width: 40ch;
+    line-height:1.4rem;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1); /* Adjust the shadow as needed */
+    /* box-shadow: 4px px 4px 4px rgba(0.05, 0.05, 0.05, 0.05); */
+    /* box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25); Add box shadow */
+}
+.Box2{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    line-height:1.4rem;
+    background-color: white;
+    padding:3rem 1rem 3rem 1rem;
+    margin-right:2rem;
+    width:25rem;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1); /* Adjust the shadow as needed */
+}
+.Box3{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    line-height:1.4rem;
+    background-color: white;
+    padding:3rem 1rem 3rem 1rem;
+    margin-right:2rem;
+    width:25rem;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1); /* Adjust the shadow as needed */
+}
+.Box4{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    line-height:1.4rem;
+    background-color: white; 
+    padding: 3rem 2rem 3rem 2rem; 
+    /* //top right bottom left */
+    margin-right:2rem; 
+    width:25rem;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1); /* Adjust the shadow as needed */
+}
+.Container h3{
+    line-height:5rem;
+}
+.Container h1{
+   padding-bottom:2rem;
+   line-height:1.8rem;
+   padding-top:2rem;
+}
+.Container i{
+    font-size:24px;
+    color:#1977cc
+}
+.Container button{
+    background-color:#2389e3;
+    color:white;
+    padding:16px;
+    border:none;
+    border-radius:1rem;
+    font-size:18px;
+    align-items: center;
+    margin-top:3rem;
+    margin-left:3rem;
+}
+.section3Body{
+    display:flex;
+    position:absolute;
+    padding:3rem 2rem 0rem 3rem;
+}
+.section3Body img{
+    height:34rem;
+    width:38rem;
+}
+.container2{
+    display:flex;
+    flex-direction:column;
+    padding:0rem 1rem 1rem 2rem;
+}
+.conMain{
+   line-height:1.5rem;
+}
+.conMain h2{
+    font-size:25px;
+    line-height:3.5rem;
+    color:#2c4964;
+}
+.con1{
+    display:flex;
+    padding-top:2rem;
+    flex-direction:column;
+}
+.container2 h3{
+   padding-left:4rem;
+   margin-top:-1rem;
+   padding-bottom:1.5rem;
+   
+}
+.container2 i{
+    font-size:30px;
+    padding-top:1rem;
+}
+.part2{
+    margin-top:40rem;
+}
+.boxess3{
+    display: flex;
+    margin-top:55rem;
+    justify-content: space-around;
+    background-color: #F1F7Fd;
+    padding-top:4rem;
+    padding-bottom:4rem;
+    position: relative;
+    top:-12rem;
+}
+
+.boxess3 > div {
+    text-align: center;
+    padding: 60px;
+    box-sizing: border-box;
+    background-color: white;
+    padding: auto;
+  
+}
+.section33  {
+    text-align: center;
+    letter-spacing: 0.4px;
+    line-height:2rem;
+}
+
+.SubServices {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.section33 {
+position: relative;
+top:-12rem;
+padding-top: 2rem;
+padding-bottom: 3rem;;
+}
+.section33 h1{
+font-size: 2rem;
+}
+.section33 p {
+padding-left: 4rem;
+padding-right: 4rem;
+}
+.SubServices > div {
+width: 30%;
+padding: 20px;
+margin: 10px;
+line-height: 2rem;
+box-sizing: border-box;
+text-align: center;
+border: 1px solid gray; /* Add a thin black border */
+}
+.SubServices > div:hover {
+box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25); /* Add a hover effect */
+background-color: #1977cc;
+cursor:pointer;
+}
+
+
+.section4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem; /* Adjust padding as needed */
+}
+
+.section4 form {
+    width: 100%;
+}
+
+    .section4 {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 20px; /* Adjust padding as needed */
+        background-color: #F1F7Fd;
+        position:relative;
+        top:-12rem;
+        letter-spacing: 0.4px;
+
+    }
+    .mainBody {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+    }
+    
+    .body4 {
+        width: 100%;
+        text-align: center;
+        position: relative; /* Add relative positioning */
+        z-index: 1; /* Set z-index to bring it to the top */
+    }
+    
+    .body4 > h1 {
+        margin-bottom: 10px;
+        font-size: 2rem;
+        line-height: 2.5rem;
+        justify-content: center;
+        padding: 2rem;
+    }
+    
+    .body4 > p {
+        margin-bottom: 20px;
+    }
+    
+    .body4 > div {
+        width: calc(33.33% - 20px);
+        margin: 10px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    
+    .body4 input,
+    .body4 select,
+    .body4 textarea {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+    
+    .buttonBody {
+        width: 100%;
+        text-align: center;
+        position: relative; /* Add relative positioning */
+        z-index: 2; /* Set a higher z-index to bring it above other elements */
+    }
+    
+    button {
+        padding: 10px;
+        cursor: pointer;
+        background-color: #F1F7Fd; /* Replace "yourColor" with the desired background color */
+    }
+    
+
+    
+    
+
+
+
+    
